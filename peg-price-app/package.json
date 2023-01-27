@@ -1,0 +1,27 @@
+{
+  "name": "peg-price-to-usd-api",
+  "version": "1.0.0",
+  "description": "App for pegging book prices to USD, updates every 6 hours",
+  "private": true,
+  "scripts": {
+    "postinstall": "(cd lambdas && npm install);",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "author": {
+    "name": "Spatium Stories",
+    "url": "https://spatiumstories.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "aws-cdk": "*",
+    "esbuild": "*",
+    "typescript": "~4.6.0"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.0.0",
+    "constructs": "^10.0.0"
+  }
+}
